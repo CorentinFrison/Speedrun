@@ -20,9 +20,17 @@ class FirstController extends Controller
     public function game($id){
         return view("firstcontroller.games", ['id' => $id]);
     }
+    
+    public function gameid($id){
+        //return "<h2> Le jeu = $id";
+        return view("firstcontroller.game", ['id' => $id]);
+    }
+    
 
     public function runs(){
         return view("firstcontroller.runs");
     }
+    
+    
 }
 
