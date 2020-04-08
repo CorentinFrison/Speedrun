@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Game;
 
 class FirstController extends Controller
 {
@@ -11,8 +12,9 @@ class FirstController extends Controller
     }
 
     public function gamelist(){
-        $games = ["1" => "game 1","2" => "game 2","3" => "game 3" ];
-        return view("firstcontroller.games", ["games" => $games]);
+
+        $gamelist = Game::all();
+        return view("firstcontroller.games", ["games" => $gamelist]);
     }
 
     public function game($id){
