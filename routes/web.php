@@ -14,4 +14,5 @@
 Route::get('/','FirstController@index');
 Route::get('/games','FirstController@gamelist');
 Route::get('/games/{id}','FirstController@gameid')->where('id','[0-9]+');
-Route::get('runs/','FirstController@runs');
+Route::get('runs/','FirstController@runlist');
+Route::get('runs/{id}','FirstController@run')->where('id','[0-9]+');

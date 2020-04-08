@@ -4,8 +4,8 @@
 
 @section('content')
 
-<h1>Runs pour le jeu {{$id}}</h1> 
-
+<h1>Runs pour {{ $game->name}}</h1> 
+<img src="{{ $game->img}}" />
 
 
 @endsection

@@ -28,10 +28,11 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('races')->insert([
+            'name' => Str::random(10),
             'p1_id' => rand(0,10),
             'p2_id' => rand(0,10),
-            'p1_vod' => 'https://www.twitch.tv/videos/'.rand(100000000,999999999),
-            'p2_vod' => 'https://www.twitch.tv/videos/'.rand(100000000,999999999),
+            'p1_vod' => 'https://player.twitch.tv/?video='.rand(100000000,999999999),
+            'p2_vod' => 'https://player.twitch.tv/?video='.rand(100000000,999999999),
             'p1_time' => '2015-12-31 00:00:00',
             'p2_time' => '2010-01-01 00:00:00',
             'deadline' => '2020-01-01 00:00:00',

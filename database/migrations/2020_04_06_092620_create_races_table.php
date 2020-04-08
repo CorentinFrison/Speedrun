@@ -15,6 +15,7 @@ class CreateRacesTable extends Migration
     {
         Schema::create('races', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
             $table->integer('p1_id')->references('id')->on('users')->onDelete('cascade');
             $table->integer('p2_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('p1_vod')->unique();
