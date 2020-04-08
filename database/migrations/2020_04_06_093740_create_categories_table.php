@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('game_id')->references('id')->on('games')->onDelete('cascade');
             $table->integer('run_id')->references('id')->on('races')->onDelete('cascade');
+            $table->string('name');
             $table->timestamps();
         });
     }
