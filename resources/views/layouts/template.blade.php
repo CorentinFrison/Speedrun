@@ -68,12 +68,14 @@
 
 
 <!-- footer section start -->
+   
 	<footer class="footer-section text-center">
 		<div class="container">
-			<h2 class="section-title mb-5">Let’s work together</h2>
+             <hr class="new4">
+			<h3 class="section-title mb-5">SpeedrunRaces</h3>
 			<a href="" class="site-btn">Connect</a>
 			<div class="social-links">
-				<a href=""><span class="fa fa-facebook"></span></a>
+				<a href="///storage/app/public/disc.png"><span class="fa fa-facebook"></span></a>
 				<a href=""><span class="fa fa-twitter"></span></a>
                 <a href=""><span class="fa fa-discord"></span></a>
 			</div>

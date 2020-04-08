@@ -25,6 +25,21 @@ body {
   
 }
 
+footer {
+    
+}
+
+/* Thick red border */
+hr.new4 {
+  border: 1px solid #0CB8E8;
+}
+
+
+a.site-btn {
+    background-color: #0CB8E8;
+    color:white;
+}
+
 .logo img{
     width: 20%;
     height: 40%;
