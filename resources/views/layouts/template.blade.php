@@ -7,6 +7,7 @@
 	<meta name="description" content="SpeedrunRaces Homepage">
 	<meta name="keywords" content="Speedrun, Races, Speedrunraces">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<!-- Favicon -->   
 	<link href="riddle/img/favicon.ico" rel="shortcut icon"/>
 
