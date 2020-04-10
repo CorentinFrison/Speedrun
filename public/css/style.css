@@ -20,8 +20,31 @@ body {
 .logo {
     display: flex;
     flex-direction: row;
-    width: 40%;
-    height: 70%;
+    justify-content: flex-start;
+    width: 100%;
+  
+}
+
+footer {
+    
+}
+
+/* Thick red border */
+hr.new4 {
+  border: 1px solid #0CB8E8;
+}
+
+
+a.site-btn {
+    background-color: #0CB8E8;
+    color:white;
+}
+
+.logo img{
+    width: 20%;
+    height: 40%;
+    justify-content: flex-start;
+    display: flex;
 }
 
 header

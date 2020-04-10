@@ -39,14 +39,12 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-3">
 					<div class="logo">
-                        <img class="logo"
-     src="/images/logo.png"
-     alt="logo">
-						<h2 class="site-logo">SpeedrunRaces</h2>
+                        <img class="logo" src="/images/logo.png" alt="logo">
+						<h2  class="site-logo"> &nbsp; SpeedrunRaces</h2>
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-9">
-					<a href="" class="site-btn header-btn">Get in touch</a>
+					<a href="" class="site-btn header-btn">Connect</a>
 					<nav class="main-menu">
 						<ul>
 							<li><a href="/">Home</a></li>
@@ -71,19 +69,19 @@
 
 
 <!-- footer section start -->
+   
 	<footer class="footer-section text-center">
 		<div class="container">
-			<h2 class="section-title mb-5">Let’s work together</h2>
-			<a href="" class="site-btn">Get in touch</a>
+             <hr class="new4">
+			<h3 class="section-title mb-5">SpeedrunRaces</h3>
+			<a href="" class="site-btn">Connect</a>
 			<div class="social-links">
-				<a href=""><span class="fa fa-pinterest"></span></a>
-				<a href=""><span class="fa fa-linkedin"></span></a>
-				<a href=""><span class="fa fa-instagram"></span></a>
-				<a href=""><span class="fa fa-facebook"></span></a>
+				<a href="///storage/app/public/disc.png"><span class="fa fa-facebook"></span></a>
 				<a href=""><span class="fa fa-twitter"></span></a>
+                <a href=""><span class="fa fa-discord"></span></a>
 			</div>
 			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>  | by <a>Corentin et Robin</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </div>
 		</div>
