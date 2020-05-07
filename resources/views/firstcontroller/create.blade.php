@@ -28,6 +28,13 @@
                     <input type="text" id="player2" name="player2" required >
                 </div>
 
+                <div class="col-md-6">
+                    <label for="deadline">Deadline</label>
+                    <input type="datetime-local" id="deadline"
+                    name="deadline" value="2018-06-12T19:30"
+                    min="2018-06-07T00:00" max="2030-06-14T00:00">
+                </div>
+
                <!-- <div class="col-md-6">
                     <label for="game-select">Séléctionnez le jeu :</label>
                     <select name="name" id="game-select">

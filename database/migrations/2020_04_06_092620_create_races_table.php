@@ -20,8 +20,8 @@ class CreateRacesTable extends Migration
             $table->integer('p2_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('p1_vod');
             $table->string('p2_vod');
-            $table->dateTime('p1_time');
-            $table->dateTime('p2_time');
+            $table->time('p1_time');
+            $table->time('p2_time');
             $table->dateTime('deadline');
             $table->timestamps();
         });

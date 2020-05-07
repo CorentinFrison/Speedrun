@@ -38,6 +38,10 @@ class FirstController extends Controller
         return view("firstcontroller.run", ['run' => $run]);
     }
 
+    public function addGame(){
+        return view("firstcontroller.addGame");
+    }
+
     public function create(){
         $gamelist = Game::all();
         $categories = Category::all();
@@ -49,12 +53,24 @@ class FirstController extends Controller
         $run = new Run();
 
         $run->name = $request->input("run_name");
-        $p1 = $request->input("player1");
-        $p2 = $request->input("player2");
+        $run->p1 = $request->input("player1");
+        $run->p2 = $request->input("player2");
         $run->p1_id = User::where("username","=",$p1)->firstOrFail()->id;
         $run->p2_id = User::where("username","=",$p2)->firstOrFail()->id;
+        $run->deadline = $request->input("deadline");
 
         $run->save();
+    }
+
+    public function storeGame(Request $request){
+        $imgname = $request->file('img')->hashName();
+        $request->file('img')->move("uploads/", $imgname);
+        $game = new Game();
+        $game->name = $request->input("game_name");
+        $game->desc = $request->input("desc");
+        $game->img = "/uploads/".$imgname;
+        $game->save();
+        return redirect("/");
     }
     
 }

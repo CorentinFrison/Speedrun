@@ -18,3 +18,5 @@ Route::get('runs/','FirstController@runlist');
 Route::get('runs/{id}','FirstController@run')->where('id','[0-9]+');
 Route::get('runs/create','FirstController@create');
 Route::post('createrun','FirstController@store');
+Route::get('addgame','FirstController@addGame');
+Route::post('storegame','FirstController@storeGame');

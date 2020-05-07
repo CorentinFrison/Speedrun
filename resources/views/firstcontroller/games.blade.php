@@ -12,6 +12,7 @@
     @foreach($games as $game)
         <a href="/games/{{ $game->id}}"><img src="{{ $game->img}}" /></a>
         <li>{{ $game->name }}</li>
+        
     @endforeach
 </ul>
 
