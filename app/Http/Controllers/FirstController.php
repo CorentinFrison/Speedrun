@@ -7,6 +7,7 @@ use App\Game;
 use App\Run;
 use App\Category;
 use App\User;
+use DB;
 
 class FirstController extends Controller
 {
@@ -22,9 +23,20 @@ class FirstController extends Controller
 
     
     public function gameid($id){
-        //return "<h2> Le jeu = $id";
         $game = Game::find($id);
-        return view("firstcontroller.game", ['game' => $game]);
+        $categories = Category::all();
+        $users = User::all();
+        $runs = Run::all();
+        $runlist = DB::table('races')
+                    -> join('categories', 'races.id', '=', 'categories.run_id')
+                    -> join('games', 'categories.game_id', '=', 'games.id')
+                    -> join('users as player1', 'player1.id', '=', 'races.p1_id')
+                    -> join('users as player2', 'player2.id', '=', 'races.p2_id')
+                    -> where('games.id', '=', $id)
+                    -> select('races.id','races.name', 'player1.username as player1','races.p1_vod', 'player2.username as player2','races.p2_vod','races.p1_time','races.p2_time','races.deadline','categories.name as categorie')
+                    -> get();
+        //dd($runlist);
+        return view("firstcontroller.game", ["game" => $game, "runlist" => $runlist]);
     }
     
 
@@ -72,6 +84,7 @@ class FirstController extends Controller
         $game->save();
         return redirect("/");
     }
+
     
 }
 
