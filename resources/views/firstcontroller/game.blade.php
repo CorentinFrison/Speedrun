@@ -6,7 +6,7 @@
 
 <h1>Runs pour {{ $game->name}}</h1>
 <img src="{{ $game->img}}" />
-<p>{{ $game->desc }}</p>
+<p>Description : {{ $game->desc }}</p>
 
 
 @foreach($runlist as $run)
